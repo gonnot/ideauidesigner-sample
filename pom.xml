@@ -41,9 +41,36 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.gonnot.maven</groupId>
+                <groupId>org.codehaus.mojo</groupId>
                 <artifactId>ideauidesigner-maven-plugin</artifactId>
-                <version>2020.3</version>
+                <version>1.0-beta-1</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.intellij</groupId>
+                        <artifactId>forms_rt</artifactId>
+                        <version>2020.3</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.intellij</groupId>
+                        <artifactId>asm-all</artifactId>
+                        <version>2020.3</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.intellij</groupId>
+                        <artifactId>javac2</artifactId>
+                        <version>2020.3</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.intellij</groupId>
+                        <artifactId>jdom</artifactId>
+                        <version>2020.3</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant</artifactId>
+                        <version>1.10.9</version>
+                    </dependency>
+                </dependencies>
                 <executions>
                     <execution>
                         <phase>compile</phase>
@@ -54,7 +81,7 @@
                 </executions>
                 <configuration>
                     <fork>true</fork>
-                    <debug>true</debug>
+                    <debug>false</debug>
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
                 </configuration>
