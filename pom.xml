@@ -11,10 +11,9 @@
     <version>0.1-SNAPSHOT</version>
     <dependencies>
         <dependency>
-            <groupId>com.jetbrains.intellij.java</groupId>
-            <artifactId>java-gui-forms-rt</artifactId>
-            <version>212.629</version>
-            <scope>runtime</scope>
+            <groupId>com.intellij</groupId>
+            <artifactId>forms_rt</artifactId>
+            <version>2020.3</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains</groupId>
@@ -88,13 +87,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>intellij-3rd-party</id>
-            <name>IntelliJ Jetbrains 3rd party</name>
-            <url>https://dl.bintray.com/jetbrains/intellij-third-party-dependencies</url>
-        </repository>
-    </repositories>
 
 </project>
